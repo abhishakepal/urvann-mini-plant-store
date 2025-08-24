@@ -1,14 +1,18 @@
-### Urvann – Mini Plant Store (MERN)
+## 🌳Urvann – Mini Plant Store (MERN)
 
 This project is a full-stack mini e-commerce application built for the Urvann Software Development Intern assignment. It allows users to browse a catalog of plants, search and filter them, and provides an admin panel for adding new plants.
 
-### Tech Stack
+---
+
+## 💻Tech Stack
 - **Frontend:** React (Vite), Tailwind, React Router, TanStack Query, Axios
 - **Backend:** Node.js, Express, MongoDB (Mongoose), Zod, CORS, Morgan
 - **DB:** MongoDB Atlas
 - **Deploy:** Netlify (frontend) + Render (backend)
 
-### Key Features
+---
+
+## 📋Key Features
 - **Plant Catalog:** Displays a list of over 50 plants from a pre-populated database, showing their name, price, categories, and stock availability.
 
 - **Search & Filter:** Users can search for plants by name (case-insensitive) and filter by categories like 'Indoor', 'Outdoor', and 'Succulent'.
@@ -21,10 +25,10 @@ This project is a full-stack mini e-commerce application built for the Urvann So
 
 ---
 
-### 🚀 Getting Started
+## 🚀 Getting Started
 To run this project locally, follow these steps:
 
-## Backend Setup
+### Backend Setup
 1. Navigate to the backend/ directory and install dependencies:
 
 ```bash
@@ -46,7 +50,7 @@ npm run seed
 npm start
 ```
 
-## Frontend Setup
+### Frontend Setup
 1. Navigate to the frontend/ directory and install dependencies:
 
 ```bash
@@ -61,9 +65,8 @@ npm install
 ```bash
 npm run dev
 ```
----
 
-## API
+## ⚙️API
 
 - `GET /api/plants?search=&category=&inStock=&page=1&limit=12&sort=price:asc`
 - `GET /api/plants/categories` → distinct categories
@@ -82,11 +85,11 @@ npm run dev
 
 ---
 
-### 🌐 Deployment
-## Frontend: Deployed on Netlify.
+## 🌐 Deployment
+### Frontend: Deployed on Netlify.
 
-Live Link: [Your Netlify URL here]
+**🔗Live Link:** https://urvann-mini-plantstore.netlify.app/
 
-## Backend: Deployed on Render.
+### Backend: Deployed on Render.
 
-Live Link: [Your Render URL here]
+**🔗Live Link:** https://urvann-backend-pkx2.onrender.com/
