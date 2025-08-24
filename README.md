@@ -1,45 +1,66 @@
 ### Urvann – Mini Plant Store (MERN)
 
-A fast, minimal MERN app that lists plants with search & filters, and includes an Admin form to add plants. Built for the Urvann assignment.
+This project is a full-stack mini e-commerce application built for the Urvann Software Development Intern assignment. It allows users to browse a catalog of plants, search and filter them, and provides an admin panel for adding new plants.
 
-### Tech
+### Tech Stack
 - **Frontend:** React (Vite), Tailwind, React Router, TanStack Query, Axios
 - **Backend:** Node.js, Express, MongoDB (Mongoose), Zod, CORS, Morgan
-- **DB:** MongoDB Atlas (recommended)
-- **Deploy:** Vercel (frontend) + Render/Railway (backend)
+- **DB:** MongoDB Atlas
+- **Deploy:** Netlify (frontend) + Render (backend)
 
-### Features
-- Catalog grid with name, price, categories (chips), stock status, optional image
-- Search by plant name **or** category keyword (case-insensitive)
-- Filter by category (dropdown) and stock
-- Pagination + sorting hooks
-- Admin form with client + server validation
-- Loading and error states
-- Seed script with 50+ realistic plants
+### Key Features
+- **Plant Catalog:** Displays a list of over 50 plants from a pre-populated database, showing their name, price, categories, and stock availability.
+
+- **Search & Filter:** Users can search for plants by name (case-insensitive) and filter by categories like 'Indoor', 'Outdoor', and 'Succulent'.
+
+- **Add Plant (Admin):** A form with input validation to securely add new plants to the database.
+
+- **Responsive UI:** The application's UI is designed to be fully responsive and works well on both desktop and mobile devices.
+
+- **Code Quality:** The project uses functional React components, hooks, and a clean, modular structure.
 
 ---
 
-# Local Setup
+### 🚀 Getting Started
+To run this project locally, follow these steps:
 
-## 1) Backend
+## Backend Setup
+1. Navigate to the backend/ directory and install dependencies:
+
 ```bash
-cd backend
-cp .env.example .env  # set MONGODB_URI
+cd backend/
 npm install
-npm run seed          # seeds 50 plants
-npm run dev           # starts http://localhost:4000
 ```
 
-## 2) Frontend
+2. Create a .env file from the example and add your MongoDB URI.
+
+3. Run the seed script to populate the database:
+
 ```bash
-cd frontend
-cp .env.example .env  # set VITE_API_URL pointing to backend
-npm install
-npm run dev           # starts http://localhost:5173
+npm run seed
 ```
 
-Open http://localhost:5173
+4. Start the backend server:
 
+```bash
+npm start
+```
+
+## Frontend Setup
+1. Navigate to the frontend/ directory and install dependencies:
+
+```bash
+cd frontend/
+npm install
+```
+
+2. Create a .env file from the example and add your backend's deployed URL.
+
+3. Start the frontend development server:
+
+```bash
+npm run dev
+```
 ---
 
 ## API
@@ -61,31 +82,11 @@ Open http://localhost:5173
 
 ---
 
-## Deployment Tips
+### 🌐 Deployment
+## Frontend: Deployed on Netlify.
 
-### Backend (Render example)
-1. Push repo to GitHub
-2. Create a new **Web Service** on Render from the `backend` folder
-3. Build command: `npm install`
-4. Start command: `npm start`
-5. Env vars: `MONGODB_URI`, `PORT` (Render provides), optional `NODE_VERSION`
-6. Post-deploy: run a one-off job `npm run seed`
+Live Link: [Your Netlify URL here]
 
-### Frontend (Vercel example)
-1. Import repo on Vercel
-2. Set **Root Directory** to `frontend`
-3. Env var: `VITE_API_URL` → your Render backend URL
-4. Build command: `npm run build`
-5. Output dir: `dist`
+## Backend: Deployed on Render.
 
----
-
-## Extra Ideas (Optional)
-- Sort dropdown (price low→high, high→low, newest)
-- Infinite scroll
-- Category multi-select chips
-- Add images from a CDN
-- Simple auth for admin
-- E2E tests with Playwright or Cypress
-
-Good luck! ✨
+Live Link: [Your Render URL here]
