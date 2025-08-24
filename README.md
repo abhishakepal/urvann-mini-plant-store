@@ -1,14 +1,14 @@
-# Urvann – Mini Plant Store (MERN)
+### Urvann – Mini Plant Store (MERN)
 
 A fast, minimal MERN app that lists plants with search & filters, and includes an Admin form to add plants. Built for the Urvann assignment.
 
-# Tech
+### Tech
 - **Frontend:** React (Vite), Tailwind, React Router, TanStack Query, Axios
 - **Backend:** Node.js, Express, MongoDB (Mongoose), Zod, CORS, Morgan
 - **DB:** MongoDB Atlas (recommended)
 - **Deploy:** Vercel (frontend) + Render/Railway (backend)
 
-# Features
+### Features
 - Catalog grid with name, price, categories (chips), stock status, optional image
 - Search by plant name **or** category keyword (case-insensitive)
 - Filter by category (dropdown) and stock
